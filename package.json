@@ -1,0 +1,28 @@
+{
+  "name": "pagetransition",
+  "widgetName": "PageTransition",
+  "version": "1.0.0",
+  "description": "Take an action when changing a page.",
+  "copyright": "© Mendix Technology BV 2022. All rights reserved.",
+  "author": "Arjen Lammers",
+  "engines": {
+    "node": ">=12"
+  },
+  "license": "Apache-2.0",
+  "config": {
+    "projectPath": "./tests/testProject"
+  },
+  "packagePath": "mendix",
+  "scripts": {
+    "start": "pluggable-widgets-tools start:native",
+    "build": "pluggable-widgets-tools build:native",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:native"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^9.0.0"
+  },
+  "dependencies": {}
+}

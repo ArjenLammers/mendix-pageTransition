@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.pagetransition.PageTransition" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Page Transition</name>
+    <description>Take an action when changing a page.</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="pageName" type="attribute" required="false">
+                <caption>Page name</caption>
+                <description>The attribute that will contain the name of the page.</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+            <property key="pageTitle" type="attribute" required="false">
+                <caption>Page title</caption>
+                <description>The attribute that contain the title of the page.</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Events">
+            <property key="didFocus" type="action" required="false">
+                <caption>Did focus</caption>
+                <description>With this approach, we will only be able to call an action when the screen focuses. This is useful for performing an action such as logging the screen view for analytics.</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
